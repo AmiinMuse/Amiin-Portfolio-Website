@@ -92,7 +92,7 @@ section{
 
 }
 
-.home-text h5{
+.home-text h3{
     color: var(--text-color);
     font-size: 25px;
     font-weight:500px;
@@ -281,7 +281,7 @@ section{
     margin-bottom: 40px;
 }
 
-.resume-content{
+.projects-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     grid-gap: 3rem;
