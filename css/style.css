@@ -12,6 +12,7 @@
 :root{
     --bg-color: #10101a;
     --main-color: #2fbf71;
+    /* --main-color: #aa80ff; */
     --2nd-main-color: #ffffffcc;
     --text-color: #fff;
     --big-font: 5rem;
@@ -36,17 +37,81 @@ header{
     background: var(--bg-color);
     padding: 24px 14%;
     transition: .3s;
+    
+}
+  
+.home_social{
+    display: grid;
+    position: absolute;
+    margin-left: 90px;
+    float: left;
+    grid-template-columns: repeat(1, 5fr);
+    grid-gap: 1.5rem;
+    
+}
+
+.home_social-icon img{
+    height: 30px;
+    width: 30px;
+}
+#github-icon {
+    background: white ;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+
+ 
+}
+#direct-icon {
+    background: white ;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    margin-left: 400px;
+
+ 
+}
+
+.home_social-icon {
+    font-size: 1.25rem;
+    color: var(--text-color);
+}
+
+.home_social-icon:hover {
+    color: var(--main-color)
+}
+
+.home_social_bottom {
+    top: 200px;
+    margin-top: 0px;
+    margin-left: 500px;
+    margin-right: 400px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+}
+
+.home_social_bottom-icon img{
+    height: 30px;
+    width: 30px;
+    align-items: center;
 }
 
 .logo{
     color: var(--text-color);
     font-size: 1.8rem;
     font-weight: 600;
+    
 }
 
 span{
     color: var(--main-color);
 }
+
+/* #nu {
+    color: #4E2A84;
+} */
 
 .navbar {
     display:flex;
@@ -295,6 +360,10 @@ section{
     border-radius: 5px;
     cursor: pointer;
     transition: all .40s;
+    /* height: 350px;
+    width: 500px; */
+    overflow: hidden;
+    box-sizing: border-box;
 
 }
 
@@ -319,10 +388,11 @@ section{
     margin-bottom: 1.2rem;
     line-height: 1.8rem;
     color: var(-2nd main-color);
+    
 }
 
 .box h5{
-    font-sizee: 14px;
+    font-size: 14px;
     font-weight: 500;
     color: var(--2nd-main-color);
 
@@ -398,6 +468,7 @@ form .send-btn:hover {
     line-height: 1.8rem;
 
 }
+ 
 
 
 @media (max-width: 1430px){
@@ -489,3 +560,16 @@ form .send-btn:hover {
 
 }
 
+@media (max-width: 795px){
+        
+    .home_social {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 80px;
+        margin-bottom: 550px;
+        
+    }
+
+    .home_social-icon {
+        margin-top: 10px;
+    }
+}
